@@ -21,10 +21,19 @@
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .navbar-logo:hover {
   color: #e94560;
+}
+
+.navbar-logo-image {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
 }
 
 .navbar-menu {

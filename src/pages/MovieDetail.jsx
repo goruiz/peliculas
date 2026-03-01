@@ -42,7 +42,7 @@ const MovieDetail = () => {
       <div className="movie-detail-container">
         <div className="error">{error}</div>
         <button className="back-button" onClick={() => navigate('/')}>
-          Volver al inicio
+          Volver a Home
         </button>
       </div>
     );
@@ -53,7 +53,7 @@ const MovieDetail = () => {
       <div className="movie-detail-container">
         <div className="error">Película no encontrada</div>
         <button className="back-button" onClick={() => navigate('/')}>
-          Volver al inicio
+          Volver a Home
         </button>
       </div>
     );

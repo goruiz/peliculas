@@ -13,7 +13,7 @@ const NotFound = () => {
           Lo sentimos, la página que estás buscando no existe.
         </p>
         <button className="notfound-button" onClick={() => navigate('/')}>
-          Volver al inicio
+          Volver al Home
         </button>
       </div>
     </div>
