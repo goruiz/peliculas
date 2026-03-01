@@ -1,0 +1,150 @@
+.movie-detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  background: #d63851;
+}
+
+.movie-detail-content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.movie-detail-poster {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-detail-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.movie-detail-title {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.movie-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.meta-item {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.meta-item.genre {
+  background: #e94560;
+  color: #fff;
+}
+
+.movie-detail-rating {
+  font-size: 1.5rem;
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.movie-detail-section {
+  margin-top: 1rem;
+}
+
+.movie-detail-section h2 {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.movie-detail-section p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.movie-detail-plot {
+  text-align: justify;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+}
+
+.loading {
+  color: #666;
+}
+
+.error {
+  color: #e94560;
+}
+
+@media (max-width: 968px) {
+  .movie-detail-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .movie-detail-poster {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .movie-detail-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-detail-container {
+    padding: 1rem;
+  }
+
+  .movie-detail-title {
+    font-size: 1.75rem;
+  }
+
+  .movie-detail-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .movie-detail-section p {
+    font-size: 1rem;
+  }
+}
